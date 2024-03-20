@@ -5,11 +5,11 @@
 class AniTrack < Formula
   desc ""
   homepage "https://github.com/rinem/ani-track"
-  version "0.1.1"
+  version "0.2"
 
   on_macos do
-    url "https://github.com/rinem/ani-track/releases/download/v0.1.1/ani-track_0.1.1_darwin_all.tar.gz"
-    sha256 "2cea4c797a98dffed70fca635839423377cdefc9a070c19ccdf7659cafe25e9d"
+    url "https://github.com/rinem/ani-track/releases/download/v0.2/ani-track_0.2_darwin_all.tar.gz"
+    sha256 "75f49e91f6d5b28a5528d32590a458822cdf3395df0567895d6137e2722fa6fe"
 
     def install
       bin.install "ani-track"
@@ -18,16 +18,16 @@ class AniTrack < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rinem/ani-track/releases/download/v0.1.1/ani-track_0.1.1_linux_arm64.tar.gz"
-      sha256 "8df7f6f79420043e1c22ecaacd29b2ec43aeef29c09c9b9edacc9458ea711d24"
+      url "https://github.com/rinem/ani-track/releases/download/v0.2/ani-track_0.2_linux_arm64.tar.gz"
+      sha256 "eb6a7d672b664b6b9bcfcd34e03af8629783fdff6f44033ded01533ede5c8677"
 
       def install
         bin.install "ani-track"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/rinem/ani-track/releases/download/v0.1.1/ani-track_0.1.1_linux_amd64.tar.gz"
-      sha256 "50cec18fa487b52a229197ae8c86250651a6c633f31136e9d595939dc4cc657f"
+      url "https://github.com/rinem/ani-track/releases/download/v0.2/ani-track_0.2_linux_amd64.tar.gz"
+      sha256 "bbbd76390355475fe14cfaea155ae3c36ed6b186a7ebf6ef7db41c4fc4cb0e07"
 
       def install
         bin.install "ani-track"
